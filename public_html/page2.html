@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Guitar Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onload="getItem()">
+        <script type="text/javascript" src="script.js"></script>
+        <div id="header">
+            <div class="hd" id="h1"><a href="index.html"><img src="images/guitar_logo.jpg" alt="logo" height="150" width="350"></a></div>
+            <div class="hd" id="options">
+                <ul id="op">
+                    <li><input type="button" value="Login"> &nbsp;
+                        <input type="button" value="Sign Up">
+                        &nbsp;
+                    </li>
+                    <li>
+                        <input type="text" name="search" value="Search items here...">
+                        <input type="submit" value="Submit">
+                    </li>
+                </ul>
+            </div>    
+        </div>
+        <div id="content">
+            <div id="im" class="hd"></div>
+            <div class="hd" id="sj">
+                <div>Price : <div id="price"></div><br></div>
+                <div>Stock availability : <div id="avail"></div><br></div>
+                <div>No of items available : <div id="items"></div></div>
+            </div>
+        </div>
+        <div>
+            <form method="post" name="myForm" onsubmit="return validate()"> 
+                <center><h3>PURCHASE FORM</h3></center>
+                    <div id="in">
+                    First Name: &nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="fn" id="fn" required><br><br>
+                    Last Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ln" id="ln" required><br><br>
+                    Phone Number: <input type="number" name="num" id="number" required><br><br>
+                    Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" id="email" required><br><br>
+                    </div>
+                <center><input type="submit" value="Go To Review" onclick="review()"></center><br>
+            </form>
+        </div>  
+    <center><div><h3>PLEASE REVIEW YOUR INFORMATION</h3></div></center>
+        <div id="cc">
+            <div>First Name: <div id="rev1"></div></div><br>
+            <div>Last Name: <div id="rev2"></div></div><br>
+            <div>Phone Number: <div id="rev3"></div></div><br>
+            <div>Email Id: <div id="rev4"></div></div><br>
+        </div>
+    <center><a href="page3.html"><input type="button" value="Go To Next Page"></a></center>
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Guitar Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="hd" id="h1"><a href="index.html"><img src="images/guitar_logo.jpg" alt="logo" height="150" width="350"></a></div>
+            <div class="hd" id="options">
+                <ul id="op">
+                    <li><input type="button" value="Login"> &nbsp;
+                        <input type="button" value="Sign Up">
+                        &nbsp;
+                    </li>
+                    <li>
+                        <input type="text" name="search" value="Search items here...">
+                        <input type="submit" value="Submit">
+                    </li>
+                </ul>
+            </div>    
+        </div>
+        <!--<div id="main">
+            <div class="gpic">
+                <img src="images/plain-guitar.jpg" height="150" width="400" alt="guitar">
+                <img src="images/pic1.jpg" height="150" width="400" alt="pic1">
+                <img src="images/pic2.jpg" height="150" width="400" alt="pic1">
+                <img src="images/pic3.jpg" height="150" width="400" alt="pic1">
+            </div>
+        </div -->
+        <div>
+            <div id="imageshow">
+               <img src="images/pic1.jpg" id="imge" alt="HTML5 Icon" width="400" height="150"></div><br> <br>
+            <center id="btn"><button onclick="prvs()" id="btnTwo">Previous</button> &nbsp; &nbsp;
+                <button onclick="nxt()" id="btnOne">Next</button></center><br><br>
+        </div>
+        <center>
+           <div id="pinfo"></div><br>
+            <div id="sinfo"></div><br>
+            <div id="crev"></div><br>
+        </center>
+    <div><center><a href="page2.html"><input type="button" value="Buy" onclick="buy()"></a></center></div>
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

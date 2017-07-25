@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<div>
+            <div id="imageshow"><img src="images/pic1.jpg" id="imgDemo" alt="HTML5 Icon" width="400" height="150"> </div><br> <br>
+            <center id="btn"><button onclick="prvs()" id="btnTwo">Previous</button> &nbsp; &nbsp;
+                <button onclick="nxt()" id="btnOne">Next</button></center><br><br>
+        </div>
+
+<script>
+var img = new Array("images/pic2.jpg","images/pic3.jpg");
+            var imgElement = document.getElementById("imgDemo");
+            var i = 0;
+            var imgLen = img.length;
+            function nxt(){
+                if(i < imgLen-1)
+                    i++;
+                else
+                    i=0;                
+                imgElement.src = img[i];                    
+            }
+            function prvs(){
+            if(i > 0)
+                i--;
+            else
+                i = imgLen-1;
+            
+                imgElement.src = img[i];                    
+            }
+</script>
+
+</body>
+</html>
